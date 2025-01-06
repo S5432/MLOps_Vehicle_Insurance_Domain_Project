@@ -1,16 +1,16 @@
-## MLOps Project - Vehicle Insurance Data Pipeline
+# MLOps Project - Vehicle Insurance Data Pipeline
 Welcome to the Vehicle Data Ingestion & Model Pipeline Project! This repository demonstrates the setup, configuration, and deployment of a comprehensive data pipeline using cutting-edge technologies. The goal of this project is to showcase my skills in data ingestion, model training, AWS integration, and CI/CD pipeline setup. Below are the details of each component of the project, outlining the steps taken to develop, deploy, and evaluate the data pipeline.
 
-# Table of Contents
-Initial Project Setup
-MongoDB Setup
-Logging, Exception Handling & Notebooks
-Data Ingestion Component
-Data Validation, Transformation & Model Training
-Model Evaluation & AWS S3 Integration
-CI/CD Setup
+## Table of Contents
+1. Initial Project Setup
+2. MongoDB Setup
+3. Logging, Exception Handling & Notebooks
+4. Data Ingestion Component
+5. Data Validation, Transformation & Model Training
+6. Model Evaluation & AWS S3 Integration
+7. CI/CD Setup
 
-# Initial Project Setup
+## Initial Project Setup
 To begin, execute the following steps to set up the project environment:
 
 Create Project Template:
@@ -50,13 +50,13 @@ Verify data in the MongoDB Atlas console under Database -> Browse Collection.
 Logging, Exception Handling & Notebooks
 These steps focus on setting up robust logging and exception handling:
 
-Implement a logger file and test it in demo.py.
+## Implement a logger file and test it in demo.py.
 Write an exception handling file and verify in demo.py.
 Add EDA (Exploratory Data Analysis) and Feature Engineering notebooks to the project.
 Data Ingestion Component
 For the Data Ingestion component, follow the steps below:
 
-Set Up Configuration:
+# Set Up Configuration:
 
 Declare required variables in constants.__init__.py.
 Configure mongo_db_connections.py for MongoDB connection.
@@ -68,7 +68,8 @@ Data Ingestion Logic:
 
 Implement data ingestion logic inside data_ingestion.py.
 Test the pipeline by running demo.py after setting the MongoDB connection URL.
-Environment Configuration:
+
+# Environment Configuration:
 
 On Mac/Windows, set the environment variable for the MongoDB URL using the terminal:
 bash
@@ -78,7 +79,7 @@ echo $MONGODB_URL  # Verify
 Data Validation, Transformation & Model Training
 Follow these steps for Data Validation, Data Transformation, and Model Training components:
 
-Data Validation:
+# Data Validation:
 
 Complete the validation logic in utils.main_utils.py and config.schema.yaml.
 Data Transformation:
@@ -87,8 +88,9 @@ Implement the transformation logic in the corresponding files and include an est
 Model Training:
 
 Develop the model training logic in the newly created estimator.py.
-Model Evaluation & AWS S3 Integration
-AWS Configuration
+
+# Model Evaluation & AWS S3 Integration
+## AWS Configuration
 Before starting with the Model Evaluation and Push to AWS S3, configure AWS services:
 
 Create AWS User:
@@ -113,7 +115,7 @@ Set up s3_estimator.py to handle S3-related operations.
 CI/CD Setup
 Automate the deployment process using CI/CD:
 
-Docker Setup:
+## Docker Setup:
 
 Create a Dockerfile and .dockerignore to containerize the application.
 Set up the GitHub Actions workflow (aws.yaml) to trigger the pipeline.
@@ -134,9 +136,8 @@ After pushing changes, the CI/CD pipeline will automatically be triggered to bui
 Expose Application:
 
 Open port 5000 in EC2 to expose the application and access it via the public IP.
-Conclusion
+## Conclusion:
 This repository provides a complete, industry-grade data pipeline setup involving MongoDB, AWS, Docker, and CI/CD. It demonstrates my technical proficiency in handling complex data engineering tasks and deploying them using modern cloud-based tools and practices.
 
-Feel free to explore the project and get in touch for any questions or collaboration opportunities!
 
 

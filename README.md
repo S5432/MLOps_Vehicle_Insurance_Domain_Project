@@ -22,7 +22,7 @@ Update setup.py and pyproject.toml to import local packages.
 Refer to crashcourse.txt for more details on configuring these files.
 Create Virtual Environment:
 
-# Set up a new virtual environment:
+## Set up a new virtual environment:
 bash
 Copy code
 conda create -n vehicle python=3.10 -y
@@ -56,7 +56,7 @@ Add EDA (Exploratory Data Analysis) and Feature Engineering notebooks to the pro
 Data Ingestion Component
 For the Data Ingestion component, follow the steps below:
 
-# Set Up Configuration:
+## Set Up Configuration:
 
 Declare required variables in constants.__init__.py.
 Configure mongo_db_connections.py for MongoDB connection.
@@ -69,7 +69,7 @@ Data Ingestion Logic:
 Implement data ingestion logic inside data_ingestion.py.
 Test the pipeline by running demo.py after setting the MongoDB connection URL.
 
-# Environment Configuration:
+## Environment Configuration:
 
 On Mac/Windows, set the environment variable for the MongoDB URL using the terminal:
 bash
@@ -79,7 +79,7 @@ echo $MONGODB_URL  # Verify
 Data Validation, Transformation & Model Training
 Follow these steps for Data Validation, Data Transformation, and Model Training components:
 
-# Data Validation:
+## Data Validation:
 
 Complete the validation logic in utils.main_utils.py and config.schema.yaml.
 Data Transformation:
@@ -89,7 +89,7 @@ Model Training:
 
 Develop the model training logic in the newly created estimator.py.
 
-# Model Evaluation & AWS S3 Integration
+## Model Evaluation & AWS S3 Integration
 ## AWS Configuration
 Before starting with the Model Evaluation and Push to AWS S3, configure AWS services:
 

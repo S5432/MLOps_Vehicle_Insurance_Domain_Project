@@ -1,7 +1,7 @@
-MLOps Project - Vehicle Insurance Data Pipeline
+## MLOps Project - Vehicle Insurance Data Pipeline
 Welcome to the Vehicle Data Ingestion & Model Pipeline Project! This repository demonstrates the setup, configuration, and deployment of a comprehensive data pipeline using cutting-edge technologies. The goal of this project is to showcase my skills in data ingestion, model training, AWS integration, and CI/CD pipeline setup. Below are the details of each component of the project, outlining the steps taken to develop, deploy, and evaluate the data pipeline.
 
-Table of Contents
+# Table of Contents
 Initial Project Setup
 MongoDB Setup
 Logging, Exception Handling & Notebooks
@@ -9,7 +9,8 @@ Data Ingestion Component
 Data Validation, Transformation & Model Training
 Model Evaluation & AWS S3 Integration
 CI/CD Setup
-Initial Project Setup
+
+# Initial Project Setup
 To begin, execute the following steps to set up the project environment:
 
 Create Project Template:
@@ -21,7 +22,7 @@ Update setup.py and pyproject.toml to import local packages.
 Refer to crashcourse.txt for more details on configuring these files.
 Create Virtual Environment:
 
-Set up a new virtual environment:
+# Set up a new virtual environment:
 bash
 Copy code
 conda create -n vehicle python=3.10 -y
@@ -34,7 +35,8 @@ Verify package installation with:
 bash
 Copy code
 pip list
-MongoDB Setup
+
+## MongoDB Setup
 Follow these steps to set up MongoDB Atlas and configure the connection:
 
 Sign up to MongoDB Atlas and create a new project.
